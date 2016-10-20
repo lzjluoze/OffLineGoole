@@ -3,3 +3,7 @@ C:\Users\Administrator\Desktop\CanYou\Model\bin\Debug\Model.pdb
 C:\Users\Administrator\Desktop\CanYou\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\CanYou\Model\obj\Debug\Model.dll
 C:\Users\Administrator\Desktop\CanYou\Model\obj\Debug\Model.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Model\bin\Debug\Model.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Model\bin\Debug\Model.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Model\obj\Debug\Model.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Model\obj\Debug\Model.pdb

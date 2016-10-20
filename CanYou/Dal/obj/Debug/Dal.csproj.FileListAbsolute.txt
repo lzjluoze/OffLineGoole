@@ -9,3 +9,15 @@ C:\Users\Administrator\Desktop\CanYou\Dal\bin\Debug\Model.pdb
 C:\Users\Administrator\Desktop\CanYou\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\CanYou\Dal\obj\Debug\DAL.dll
 C:\Users\Administrator\Desktop\CanYou\Dal\obj\Debug\DAL.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\DAL.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\DAL.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\Common.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\Model.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\System.Data.SQLite.DLL
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\System.Data.SQLite.Linq.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\Newtonsoft.Json.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\Common.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\bin\Debug\Model.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\obj\Debug\DAL.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Dal\obj\Debug\DAL.pdb

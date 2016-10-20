@@ -13,7 +13,20 @@ namespace Dal
 {
     public class PolylineDal
     {
-  
+
+        public int GetMaxId(SQLiteConnection conn, SQLiteTransaction trans)
+        {
+            string strSql = "select id from Polyline order by Id desc  limit 1";
+            object obj = DbHelperSQLite.GetSingle(conn, trans, strSql);
+            if (obj == null)
+            {
+                return 0;
+            }
+            else
+            {
+                return int.Parse(obj.ToString());
+            }
+        }
          /// <summary>
        /// 添加
        /// </summary>

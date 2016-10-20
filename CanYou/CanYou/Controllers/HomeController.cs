@@ -10,7 +10,8 @@ namespace CanYou.Controllers
     {
         //
         // GET: /Home/
-
+        [HttpGet]
+        [ValidateInput(false)]
         public ActionResult Index()
         {
             return View();

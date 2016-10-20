@@ -55,6 +55,82 @@ namespace Dal
                 return false;
             }
        }
+
+
+       public bool AddMarKerList(List<MarkerModel> list, PolylineModel models)
+        {
+
+            bool result=false;
+            int? PolylineId;
+            PolylineDal dll = new PolylineDal();
+            using (SQLiteConnection conn = new SQLiteConnection(DbHelperSQLite.connectionString))
+         {
+             conn.Open();
+             using (SQLiteTransaction trans = conn.BeginTransaction())
+             {
+                 try
+                 {
+                     StringBuilder strSqls = new StringBuilder();
+                     strSqls.Append("insert into Polyline(");
+                     strSqls.Append("Name,Color,AddTime)");
+                     strSqls.Append(" values (");
+                     strSqls.Append("@Name,@Color,@AddTime)");
+                     SQLiteParameter[] parameterss = {
+                     new  SQLiteParameter("@Name", DBNull.Value),
+                     new  SQLiteParameter("@Color", DBNull.Value),
+                      new  SQLiteParameter("@AddTime", DBNull.Value),
+
+              };
+                     parameterss[0].Value = models.Name;
+                     parameterss[1].Value = models.Color;
+                     parameterss[2].Value = models.AddTime;
+
+
+
+                     DbHelperSQLite.ExecuteSql(conn, trans, strSqls.ToString(), parameterss);
+                     //DbHelperSQLite.ExecuteSql(strSqls.ToString(), parameterss);
+
+                     PolylineId = dll.GetMaxId(conn, trans);
+
+                     foreach(MarkerModel model in list)
+                     {
+                         model.PolylineId = PolylineId;
+                         StringBuilder strSql = new StringBuilder();
+                         strSql.Append("insert into Marker(");
+                         strSql.Append("Lat,Lng,Title,Rank,Intro,PolylineId,AddTime)");
+                         strSql.Append(" values (");
+                         strSql.Append("@Lat,@Lng,@Title,@Rank,@Intro,@PolylineId,@AddTime)");
+                         SQLiteParameter[] parameters = {
+                new  SQLiteParameter("@Lat", DBNull.Value),
+                new  SQLiteParameter("@Lng", DBNull.Value),
+                new  SQLiteParameter("@Title", DBNull.Value),
+                new  SQLiteParameter("@Rank", DBNull.Value),
+                new  SQLiteParameter("@Intro", DBNull.Value),
+                new  SQLiteParameter("@PolylineId", DBNull.Value),
+                  new  SQLiteParameter("@AddTime", DBNull.Value)
+              };
+                         parameters[0].Value = model.Lat;
+                         parameters[1].Value = model.Lng;
+                         parameters[2].Value = model.Title;
+                         parameters[3].Value = model.Rank;
+                         parameters[4].Value = model.Intro;
+                         parameters[5].Value = model.PolylineId;
+                         parameters[6].Value = model.AddTime;
+                         DbHelperSQLite.ExecuteSql(conn, trans, strSql.ToString(), parameters);
+                     }
+                       
+                       trans.Commit();
+                       result = true;
+                 }
+                 catch
+                 {
+                     trans.Rollback();
+                     return false;
+                 }
+             }
+            }
+            return result;
+        }
        /// <summary>
        /// 修改
        /// </summary>

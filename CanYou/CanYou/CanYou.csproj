@@ -41,6 +41,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -62,13 +66,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
       <Private>True</Private>
@@ -113,6 +110,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AjaxController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -135,6 +133,7 @@
     <Content Include="GoogleMapsAPIv3\index7动态更改绘制图形或线的颜色.html" />
     <Content Include="GoogleMapsAPIv3\index8点击弹出.html" />
     <Content Include="GoogleMapsAPIv3\index原始页面.html" />
+    <Content Include="GoogleMapsAPIv3\js\draw.js" />
     <Content Include="GoogleMapsAPIv3\js\jquery-1.8.0.min.js" />
     <Content Include="GoogleMapsAPIv3\mapfiles\api-3\16\2\common.js" />
     <Content Include="GoogleMapsAPIv3\mapfiles\api-3\16\2\controls.js" />
@@ -175,7 +174,6 @@
     <Content Include="GoogleMapsAPIv3\mapfiles\iw_minus.gif" />
     <Content Include="GoogleMapsAPIv3\mapfiles\iw_plus.gif" />
     <Content Include="GoogleMapsAPIv3\mapfiles\mapapi.js" />
-    <Content Include="GoogleMapsAPIv3\mapfiles\mapapi_bak.js" />
     <Content Include="GoogleMapsAPIv3\mapfiles\mapcontrols3d7.png" />
     <Content Include="GoogleMapsAPIv3\mapfiles\markers2\marker_sprite.png" />
     <Content Include="GoogleMapsAPIv3\mapfiles\mv\imgs8.png" />
@@ -11276,7 +11274,9 @@
     <Content Include="GoogleMapsAPIv3\obj\Debug\CanYou.dll" />
     <Content Include="GoogleMapsAPIv3\obj\Debug\CanYou.pdb" />
     <Content Include="GoogleMapsAPIv3\test1img标签叠加测试.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -11293,6 +11293,10 @@
       <Project>{a57766ba-5de8-4214-a1b5-cae98f1f8c6e}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{21457be6-50a2-4535-981a-55281ff41bbb}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{6e697fe7-0c76-4289-8f99-8df24be36923}</Project>
       <Name>Model</Name>
@@ -11305,7 +11309,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GoogleMapsAPIv3\mapfiles\name=icons\spotlight\spotlight-poi.png&amp;scale=1" />
+    <None Include="GoogleMapsAPIv3\mapfiles\name=icons\spotlight\spotlight-poi.png&amp;scale=1" />
     <Content Include="GoogleMapsAPIv3\obj\Debug\CanYou.csprojResolveAssemblyReference.cache" />
     <Content Include="GoogleMapsAPIv3\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <Content Include="GoogleMapsAPIv3\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />

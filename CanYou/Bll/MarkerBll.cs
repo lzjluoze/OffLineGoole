@@ -22,6 +22,11 @@ MarkerDal dal=new MarkerDal();
        {
          return  dal.AddMarker(model);
        }
+
+      public bool AddMarKerList(List<MarkerModel> list,PolylineModel models)
+       {
+           return dal.AddMarKerList(list,models);
+       }
          /// <summary>
        /// 修改
        /// </summary>

@@ -10,3 +10,16 @@ C:\Users\Administrator\Desktop\CanYou\Bll\bin\Debug\Model.pdb
 C:\Users\Administrator\Desktop\CanYou\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\CanYou\Bll\obj\Debug\BLL.dll
 C:\Users\Administrator\Desktop\CanYou\Bll\obj\Debug\BLL.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\BLL.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\BLL.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\Common.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\DAL.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\Model.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\Newtonsoft.Json.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\System.Data.SQLite.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\Common.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\DAL.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\bin\Debug\Model.pdb
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\obj\Debug\BLL.dll
+F:\internetGitDemo\OffLingGoole\CanYou\Bll\obj\Debug\BLL.pdb
